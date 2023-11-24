@@ -8,10 +8,12 @@ const Header = () => {
             <div>
                 Your Logo Here
             </div>
-            <div className='nav-items'>
+            <div className='nav-items'>   
             <Link to='/quiz'>Topics</Link>
-            <Link to='/quiz'>Statistics</Link>
-            <Link to='/blog'>Blog</Link></div>
+            <Link to='/'>Statistics</Link>
+            <Link to='/blog'>Blog</Link>
+            </div>
+
             
         </div>
     );

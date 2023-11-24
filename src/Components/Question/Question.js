@@ -2,7 +2,9 @@ import React from 'react';
 import './Question.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import QuizAnswers from '../QuizAnswers/QuizAnswers';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faEye } from '@fortawesome/free-solid-svg-icons'
+
 
 
 const Question = ({ questions}) => {
@@ -24,17 +26,18 @@ const Question = ({ questions}) => {
     return (
         <div>
             <div className="question-container">
-                <p>{question}</p>
-                <div>
-                {/* <p><input onClick={valueByClick} type="radio" value={options[0]} name="option-1" /> {options[0]}</p>
-                    <p><input onClick={valueByClick} type="radio" value={options[1]} name="option-2" /> {options[1]}</p>
-                    <p><input onClick={valueByClick} type="radio" value={options[2]} name="option-3" /> {options[2]}</p>
-                    <p><input onClick={valueByClick} type="radio" value={options[3]} name="option-4" /> {options[3]}</p> */}
-
-                    <QuizAnswers options={options}></QuizAnswers>
+                <div className='title-div'>
+                <p className='question-title'>{question}</p>
+                <p className='eyeicon'><FontAwesomeIcon icon={faEye}/></p>
+                </div>
+                <div className='answers'>
+                <p><input onClick={valueByClick} type="radio" value={options[0]} name="option" /> {options[0]}</p>
+                    <p><input onClick={valueByClick} type="radio" value={options[1]} name="option" /> {options[1]}</p>
+                    <p><input onClick={valueByClick} type="radio" value={options[2]} name="option" /> {options[2]}</p>
+                    <p><input onClick={valueByClick} type="radio" value={options[3]} name="option" /> {options[3]}</p>                
                     
                 </div>
-                {/* <ToastContainer
+                <ToastContainer
                     position="top-center"
                     autoClose={2000}
                     hideProgressBar={false}
@@ -44,7 +47,7 @@ const Question = ({ questions}) => {
                     pauseOnFocusLoss
                     draggable
                     pauseOnHover
-                    theme="light" /> */}
+                    theme="light" />
             </div>
 
 
