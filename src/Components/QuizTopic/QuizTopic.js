@@ -7,7 +7,7 @@ const QuizTopic = ({topic, btnClick}) =>
 {
     // console.log(topic);
 
-    const {name, logo, total} = topic;
+    const {name, logo, total,id} = topic;
 
 
     return (
@@ -21,7 +21,7 @@ const QuizTopic = ({topic, btnClick}) =>
                 
             </div>
             <div>
-            <button onClick={() => btnClick(topic.id)}>Practise Now</button>
+            <button onClick={() => btnClick(topic.id)}><Link to={`/quiz/${id}`}>Practise Now</Link></button>
             </div>
             
         </div>
