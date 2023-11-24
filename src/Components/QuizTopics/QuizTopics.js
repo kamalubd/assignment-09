@@ -8,18 +8,12 @@ const QuizTopics = () => {
     const quizTopicsData = useLoaderData();
     const allTopics = quizTopicsData.data;
 
-    const btnClick = (topic) => {
-        console.log(topic);
-        return topic;
-        
-    };
     
     return (
         <div className='topics-container'>
             {allTopics.map(topic =>  <QuizTopic 
             topic={topic}
             key = {topic.id}
-            btnClick = {btnClick}
             ></QuizTopic>)};
             
         </div>

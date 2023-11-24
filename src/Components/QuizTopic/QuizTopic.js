@@ -3,7 +3,7 @@ import React from 'react';
 import './QuizTopic.css'
 import { Link } from 'react-router-dom';
 
-const QuizTopic = ({topic, btnClick}) =>
+const QuizTopic = ({topic}) =>
 {
     // console.log(topic);
 
@@ -21,7 +21,7 @@ const QuizTopic = ({topic, btnClick}) =>
                 
             </div>
             <div>
-            <button onClick={() => btnClick(topic.id)}><Link to={`/quiz/${id}`}>Practise Now</Link></button>
+            <button><Link to={`/quiz/${id}`}>Practise Now</Link></button>
             </div>
             
         </div>
