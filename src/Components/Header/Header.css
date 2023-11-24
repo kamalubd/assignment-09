@@ -1,0 +1,10 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.nav-items a{
+    padding: 10px;
+}

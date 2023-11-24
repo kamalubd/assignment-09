@@ -1,0 +1,15 @@
+.topic-container {
+    border: 2px solid aqua;
+    border-radius: 10px;
+}
+
+
+.topic-img img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+}
