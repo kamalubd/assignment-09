@@ -23,12 +23,16 @@ const Question = ({ questions}) => {
         }
     };
 
+    const showAnswer = () => {
+            toast (correctAnswer);
+    }
+
     return (
         <div>
             <div className="question-container">
                 <div className='title-div'>
                 <p className='question-title'>{question}</p>
-                <p className='eyeicon'><FontAwesomeIcon icon={faEye}/></p>
+                <p className='eyeicon' onClick={showAnswer}><FontAwesomeIcon icon={faEye}/></p>
                 </div>
                 <div className='answers'>
                 <p><input onClick={valueByClick} type="radio" value={options[0]} name="option" /> {options[0]}</p>
@@ -39,7 +43,7 @@ const Question = ({ questions}) => {
                 </div>
                 <ToastContainer
                     position="top-center"
-                    autoClose={2000}
+                    autoClose={1500}
                     hideProgressBar={false}
                     newestOnTop={false}
                     closeOnClick
