@@ -15,6 +15,7 @@ const Statistics = () => {
 
     return (
         <div className='linechart'>
+        <div><h3 className='title'>Number of Quiz Chart by Topic</h3></div>
         <LineChart
           width={500}
           height={300}
@@ -35,8 +36,6 @@ const Statistics = () => {
           <Line type="monotone" dataKey="total" stroke="#82ca9d" />
         </LineChart>
         </div>
-
-
     );
 };
 

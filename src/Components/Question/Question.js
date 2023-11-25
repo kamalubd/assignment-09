@@ -24,7 +24,8 @@ const Question = ({ questions}) => {
     };
 
     const showAnswer = () => {
-            toast (correctAnswer);
+          
+         toast (`Correct Answe is: ${correctAnswer}`)
     }
 
     return (
