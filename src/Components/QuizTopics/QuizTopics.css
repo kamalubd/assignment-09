@@ -1,3 +1,13 @@
+.introtext {
+    background-color:rgb(219, 124, 77) ;
+    color: white ;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 .topics-container {
 
     display: grid;

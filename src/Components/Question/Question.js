@@ -25,7 +25,7 @@ const Question = ({ questions}) => {
 
     const showAnswer = () => {
           
-         toast (`Correct Answe is: ${correctAnswer}`)
+         toast (`Correct Answer is: ${correctAnswer}`)
     }
 
     return (

@@ -21,7 +21,7 @@ const QuizTopic = ({topic}) =>
                 
             </div>
             <div>
-            <button><Link to={`/quiz/${id}`}>Practise Now</Link></button>
+            <button className='btnbtn'><Link to={`/quiz/${id}`}>Practise Now</Link></button>
             </div>
             
         </div>

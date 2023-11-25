@@ -1,9 +1,7 @@
 .topic-container {
-    border: 2px solid aqua;
+    box-shadow: 5px 5px 5px 5px rgb(154, 150, 150);
     border-radius: 10px;
 }
-
-
 .topic-img img {
     width: 200px;
     border-radius: 10px;
@@ -12,4 +10,18 @@
 .features {
     display: flex;
     justify-content: space-around;
+}
+
+.btnbtn {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(48, 171, 228);
+    border: none;
+    border-radius: 10px;
+}
+
+.btnbtn a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }

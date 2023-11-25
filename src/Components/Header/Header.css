@@ -1,10 +1,31 @@
+.sitename {
+    font-weight: 700;
+    box-shadow: 5px 5px 5px 5px rgb(236, 230, 230);
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.sitename a {
+    color: rgb(21, 21, 246);
+    text-decoration: none;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 30px;
+    margin-top: 20px;
 }
 
 .nav-items a{
     padding: 10px;
+    text-decoration: none;
+    color: rgb(98, 98, 241);
+    font-weight: 400;
+}
+
+.nav-items a:hover{
+    color: orange;
 }
